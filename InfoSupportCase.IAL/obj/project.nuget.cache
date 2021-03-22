@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "7YxcG+oNJtz27cLOOK/ub3ofaj0gsGh1M4T6xxv5bfBo1+5zye6CXFO5X5xrdUyvol9Ud/t4c7tuo2Uch4aT7w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\CefasPex\\Desktop\\CASECFP\\InfoSupportCase.IAL\\InfoSupportCase.IAL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wp_CefasPex\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\wp_CefasPex\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

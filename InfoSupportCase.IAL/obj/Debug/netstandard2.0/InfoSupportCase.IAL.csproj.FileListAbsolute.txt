@@ -1,0 +1,12 @@
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCase.IAL\bin\Debug\netstandard2.0\InfoSupportCase.IAL.deps.json
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCase.IAL\bin\Debug\netstandard2.0\InfoSupportCase.IAL.dll
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCase.IAL\bin\Debug\netstandard2.0\InfoSupportCase.IAL.pdb
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCase.IAL\bin\Debug\netstandard2.0\InfoSupportCase.DAL.dll
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCase.IAL\bin\Debug\netstandard2.0\InfoSupportCase.DAL.pdb
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCase.IAL\obj\Debug\netstandard2.0\InfoSupportCase.IAL.csprojAssemblyReference.cache
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCase.IAL\obj\Debug\netstandard2.0\InfoSupportCase.IAL.AssemblyInfoInputs.cache
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCase.IAL\obj\Debug\netstandard2.0\InfoSupportCase.IAL.AssemblyInfo.cs
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCase.IAL\obj\Debug\netstandard2.0\InfoSupportCase.IAL.csproj.CopyComplete
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCase.IAL\obj\Debug\netstandard2.0\InfoSupportCase.IAL.dll
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCase.IAL\obj\Debug\netstandard2.0\InfoSupportCase.IAL.pdb
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCase.IAL\obj\Debug\netstandard2.0\InfoSupportCase.IAL.csproj.CoreCompileInputs.cache

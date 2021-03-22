@@ -1,0 +1,23 @@
+<p>courses works!</p>
+<h1 id="tableLabel">Courses</h1>
+
+<p *ngIf="!courses"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="courses">
+  <thead>
+    <tr>
+      <th>Start</th>
+      <th>Code</th>
+      <th>Cursus Naam</th>
+      <th>Duur (in dagen)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let course of courses">
+      <td>{{ course.date }}</td>
+      <td>{{ course.code }}</td>
+      <td>{{ course.name }}</td>
+      <td>{{ course.days }}</td>
+    </tr>
+  </tbody>
+</table>
