@@ -2,8 +2,10 @@
 
 namespace InfoSupportCase
 {
-    public class CourseToViewModel
+    public class Course
     {
+        public int Id { get; set; }
+
         public int Days { get; set; }
 
         public string Name { get; set; }

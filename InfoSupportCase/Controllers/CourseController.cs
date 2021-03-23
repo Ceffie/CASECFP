@@ -15,11 +15,12 @@ namespace InfoSupportCase.Controllers
     {
         // GET: api/<CourseController>
         [HttpGet]
-        public IEnumerable<CourseToViewModel> Get()
+        public IEnumerable<Course> Get()
         {
             //This is testcode: replace it with a DB-get with the actual content
-            return Enumerable.Range(1, 5).Select(index => new CourseToViewModel
+            return Enumerable.Range(1, 5).Select(index => new Course
             {
+                Id = index,
                 Code = "123T",
                 Days = 5,
                 Name = "Test of Courses",
