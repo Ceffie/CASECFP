@@ -1,7 +1,7 @@
 interface Course {
-    id : number;
-    days: number;
-    code: string;
+    id: number;
     name: string;
-    date: string;
+    code: string;
+    days: number;
+    date: string; 
   }

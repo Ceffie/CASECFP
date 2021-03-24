@@ -9,6 +9,7 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { CoursesComponent } from './courses/courses.component';
+import { UploadComponent } from './upload/upload.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CoursesComponent } from './courses/courses.component';
     NavMenuComponent,
     HomeComponent,
     CounterComponent,
-    CoursesComponent
+    CoursesComponent,
+    UploadComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -26,6 +28,8 @@ import { CoursesComponent } from './courses/courses.component';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'courses', component: CoursesComponent },
+      { path: 'upload', component: UploadComponent },
+
     ])
   ],
   providers: [],

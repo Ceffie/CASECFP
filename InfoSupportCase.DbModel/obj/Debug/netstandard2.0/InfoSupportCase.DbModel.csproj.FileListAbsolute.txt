@@ -1,0 +1,9 @@
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCase.DbModel\bin\Debug\netstandard2.0\InfoSupportCase.DbModel.deps.json
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCase.DbModel\bin\Debug\netstandard2.0\InfoSupportCase.DbModel.dll
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCase.DbModel\obj\Debug\netstandard2.0\InfoSupportCase.DbModel.csprojAssemblyReference.cache
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCase.DbModel\obj\Debug\netstandard2.0\InfoSupportCase.DbModel.AssemblyInfoInputs.cache
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCase.DbModel\obj\Debug\netstandard2.0\InfoSupportCase.DbModel.AssemblyInfo.cs
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCase.DbModel\bin\Debug\netstandard2.0\InfoSupportCase.DbModel.pdb
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCase.DbModel\obj\Debug\netstandard2.0\InfoSupportCase.DbModel.dll
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCase.DbModel\obj\Debug\netstandard2.0\InfoSupportCase.DbModel.pdb
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCase.DbModel\obj\Debug\netstandard2.0\InfoSupportCase.DbModel.csproj.CoreCompileInputs.cache

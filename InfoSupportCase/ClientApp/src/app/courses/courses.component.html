@@ -1,5 +1,4 @@
-<p>courses works!</p>
-<h1 id="tableLabel">Courses</h1>
+<h1 id="tableLabel">Cursussen</h1>
 
 <p *ngIf="!courses"><em>Loading...</em></p>
 
@@ -7,7 +6,6 @@
   <thead>
     <tr>
       <th>Start</th>
-      <th>Code</th>
       <th>Cursus Naam</th>
       <th>Duur (in dagen) </th>
     </tr>
@@ -15,7 +13,6 @@
   <tbody>
     <tr *ngFor="let course of courses">
       <td>{{ course.date }}</td>
-      <td>{{ course.code }}</td>
       <td>{{ course.name }}</td>
       <td>{{ course.days }}</td>
     </tr>
