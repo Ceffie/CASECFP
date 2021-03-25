@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Inject, OnInit } from '@angular/core';
+import { Course } from '../models/Course';
 
 @Component({
   selector: 'app-courses',

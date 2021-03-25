@@ -3,11 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
 import { CoursesComponent } from './courses/courses.component';
 import { UploadComponent } from './upload/upload.component';
 
@@ -16,7 +14,6 @@ import { UploadComponent } from './upload/upload.component';
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CounterComponent,
     CoursesComponent,
     UploadComponent
   ],
@@ -26,7 +23,6 @@ import { UploadComponent } from './upload/upload.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
       { path: 'courses', component: CoursesComponent },
       { path: 'upload', component: UploadComponent },
 
