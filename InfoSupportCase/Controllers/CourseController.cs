@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using InfoSupportCase.Data;
 using InfoSupportCase.Models;
+using InfoSupportCase.Services;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -16,20 +17,17 @@ namespace InfoSupportCase.Controllers
     public class CourseController : ControllerBase
     {
         private readonly InfoSupportCaseContext _context;
-
-        public CourseController(InfoSupportCaseContext context)
+        private IGetCourses getCourses;
+        public CourseController(InfoSupportCaseContext context, IGetCourses getCourses)
         {
             _context = context;
+            this.getCourses = getCourses;
         }
         // GET: api/<CourseController>
         [HttpGet]
         public IEnumerable<CourseToViewModel> Get()
-        {
-            var query = from course in _context.CourseModel
-                        join courseInstance in _context.CourseInstanceModel on course.Id equals courseInstance.CourseId
-                        select new CourseToViewModel { Code = course.Code, Days = course.Days, Name = course.Name, Date = courseInstance.Date.ToString("dd/M/yyyy", CultureInfo.InvariantCulture) };
-
-            return query;
+        {   
+            return getCourses.GetListOfCourses(_context);
         }
 
         public string SayHiToTheTests()

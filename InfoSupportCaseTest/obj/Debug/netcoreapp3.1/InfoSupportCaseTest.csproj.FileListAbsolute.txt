@@ -244,8 +244,10 @@ C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCaseTest\bin\Debug\netcoreapp3.1\In
 C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCaseTest\obj\Debug\netcoreapp3.1\InfoSupportCaseTest.csprojAssemblyReference.cache
 C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCaseTest\obj\Debug\netcoreapp3.1\InfoSupportCaseTest.AssemblyInfoInputs.cache
 C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCaseTest\obj\Debug\netcoreapp3.1\InfoSupportCaseTest.AssemblyInfo.cs
-C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCaseTest\obj\Debug\netcoreapp3.1\InfoSupportCaseTest.csproj.CoreCompileInputs.cache
 C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCaseTest\obj\Debug\netcoreapp3.1\InfoSupportCaseTest.csproj.CopyComplete
 C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCaseTest\obj\Debug\netcoreapp3.1\InfoSupportCaseTest.dll
 C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCaseTest\obj\Debug\netcoreapp3.1\InfoSupportCaseTest.pdb
 C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCaseTest\obj\Debug\netcoreapp3.1\InfoSupportCaseTest.genruntimeconfig.cache
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCaseTest\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCaseTest\bin\Debug\netcoreapp3.1\Moq.dll
+C:\Users\CefasPex\Desktop\CASECFP\InfoSupportCaseTest\obj\Debug\netcoreapp3.1\InfoSupportCaseTest.csproj.CoreCompileInputs.cache

@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using InfoSupportCase.Data;
+using InfoSupportCase.Services;
 
 namespace InfoSupportCase
 {
@@ -31,6 +32,8 @@ namespace InfoSupportCase
 
             services.AddDbContext<InfoSupportCaseContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("InfoSupportCaseContext")));
+            services.AddSingleton<IGetCourses, GetCourses>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
