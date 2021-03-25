@@ -53,28 +53,19 @@ namespace InfoSupportCase.Controllers
                             where course.Code == ctvm.Code && course.Days == ctvm.Days && course.Name == ctvm.Name
                             select new CourseModel { Id = course.Id, Code = course.Code, Days = course.Days, Name = course.Name};
 
-                //if no dupes: upload CourseModel
-                if (query.Count() > 0)
-                {
-                    cm.Name = ctvm.Name;
-                    cm.Code = ctvm.Code;
-                    cm.Days = ctvm.Days;
+                //this doesn't work yet
+                cm.Name = ctvm.Name;
+                cm.Code = ctvm.Code;
+                cm.Days = ctvm.Days;
 
-                    _context.CourseModel.Add(cm);
-                    _context.SaveChanges();
-                }
+                _context.CourseModel.Add(cm);
+                _context.SaveChanges();
 
-                var cmCheck = from course in _context.CourseModel
-                              where course.Code == ctvm.Code && course.Days == ctvm.Days && course.Name == ctvm.Name
-                              select new CourseModel();
-
-                //cim.Date = ctvm.Date; //search how to translate string to DateTime
-                cim.CourseId = cmCheck.First().Id;
                 
             }
             if (courseToViewModels.Count > 0)
             {
-                Console.WriteLine(cim.CourseId);
+                //Console.WriteLine(cim.CourseId);
             }
         }
 

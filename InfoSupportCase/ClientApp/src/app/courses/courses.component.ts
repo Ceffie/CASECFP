@@ -11,11 +11,14 @@ export class CoursesComponent implements OnInit {
   public courses: Course[];
 
   constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
-    http.get<Course[]>(baseUrl + 'api/course').subscribe(result => {
-      this.courses = result;
-    }, error => console.error(error));
+    this.GetCourses(http, baseUrl);
   }
   ngOnInit() {
   }
 
+  GetCourses(http: HttpClient, baseUrl: string){
+    http.get<Course[]>(baseUrl + 'api/course').subscribe(result => {
+      this.courses = result;
+    }, error => console.error(error));
+  }
 }
