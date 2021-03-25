@@ -32,6 +32,11 @@ namespace InfoSupportCase.Controllers
             return query;
         }
 
+        public string SayHiToTheTests()
+        {
+            return "Hi";
+        }
+
         // POST api/<CourseController>
         [HttpPost]
         public void Post(List<CourseToViewModel> courseToViewModels)

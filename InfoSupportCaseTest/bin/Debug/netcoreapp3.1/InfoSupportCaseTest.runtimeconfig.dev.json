@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\wp_CefasPex\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\wp_CefasPex\\.nuget\\packages"
+    ]
+  }
+}
