@@ -3236,10 +3236,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "InfoSupportCase.BAL": "1.0.0",
-          "InfoSupportCase.DAL": "1.0.0",
-          "InfoSupportCase.DbModel": "1.0.0",
-          "InfoSupportCase.IAL": "1.0.0",
           "Microsoft.AspNetCore.SpaServices": "3.1.9",
           "Microsoft.AspNetCore.SpaServices.Extensions": "3.1.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.13",
@@ -3255,54 +3251,6 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
-      },
-      "InfoSupportCase.BAL/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "InfoSupportCase.DAL": "1.0.0",
-          "InfoSupportCase.DbModel": "1.0.0",
-          "InfoSupportCase.IAL": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/InfoSupportCase.BAL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/InfoSupportCase.BAL.dll": {}
-        }
-      },
-      "InfoSupportCase.DAL/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/InfoSupportCase.DAL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/InfoSupportCase.DAL.dll": {}
-        }
-      },
-      "InfoSupportCase.DbModel/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/InfoSupportCase.DbModel.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/InfoSupportCase.DbModel.dll": {}
-        }
-      },
-      "InfoSupportCase.IAL/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "InfoSupportCase.DAL": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/InfoSupportCase.IAL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/InfoSupportCase.IAL.dll": {}
-        }
       }
     }
   },
@@ -10138,26 +10086,6 @@
       "type": "project",
       "path": "../InfoSupportCase/InfoSupportCase.csproj",
       "msbuildProject": "../InfoSupportCase/InfoSupportCase.csproj"
-    },
-    "InfoSupportCase.BAL/1.0.0": {
-      "type": "project",
-      "path": "../InfoSupportCase.BAL/InfoSupportCase.BAL.csproj",
-      "msbuildProject": "../InfoSupportCase.BAL/InfoSupportCase.BAL.csproj"
-    },
-    "InfoSupportCase.DAL/1.0.0": {
-      "type": "project",
-      "path": "../InfoSupportCase.DAL/InfoSupportCase.DAL.csproj",
-      "msbuildProject": "../InfoSupportCase.DAL/InfoSupportCase.DAL.csproj"
-    },
-    "InfoSupportCase.DbModel/1.0.0": {
-      "type": "project",
-      "path": "../InfoSupportCase.DbModel/InfoSupportCase.DbModel.csproj",
-      "msbuildProject": "../InfoSupportCase.DbModel/InfoSupportCase.DbModel.csproj"
-    },
-    "InfoSupportCase.IAL/1.0.0": {
-      "type": "project",
-      "path": "../InfoSupportCase.IAL/InfoSupportCase.IAL.csproj",
-      "msbuildProject": "../InfoSupportCase.IAL/InfoSupportCase.IAL.csproj"
     }
   },
   "projectFileDependencyGroups": {

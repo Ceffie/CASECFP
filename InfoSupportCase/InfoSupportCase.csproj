@@ -32,10 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\InfoSupportCase.BAL\InfoSupportCase.BAL.csproj" />
-    <ProjectReference Include="..\InfoSupportCase.DAL\InfoSupportCase.DAL.csproj" />
-    <ProjectReference Include="..\InfoSupportCase.DbModel\InfoSupportCase.DbModel.csproj" />
-    <ProjectReference Include="..\InfoSupportCase.IAL\InfoSupportCase.IAL.csproj" />
+
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
