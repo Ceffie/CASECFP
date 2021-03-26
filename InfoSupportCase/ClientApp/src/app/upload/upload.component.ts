@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Inject, OnInit } from '@angular/core';
 import { Course } from '../models/Course';
-import { Uploader } from './uploader';
+import { Uploader } from '../services/uploader.service';
 
 
 @Component({
