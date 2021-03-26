@@ -32,7 +32,7 @@ namespace InfoSupportCase
 
             services.AddDbContext<InfoSupportCaseContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("InfoSupportCaseContext")));
-            services.AddSingleton<IGetCourses, GetCourses>();
+            services.AddSingleton<IHandleCourses, HandleCourses>();
 
         }
 

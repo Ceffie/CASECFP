@@ -11,17 +11,17 @@ namespace InfoSupportCaseTest
     public class CourseControllerTests
     {
         CourseController sut;
-        Mock<IGetCourses> getCoursesMock;
+        Mock<IHandleCourses> handleCoursesMock;
+        CourseToViewModel ctvm = new CourseToViewModel { Days = 2, Name = "Testing in C Sharp", Code = "TESTCSHARP", Date = "10/10/1010" };
+        List<CourseToViewModel> ienctvm = new List<CourseToViewModel>();
 
         [TestInitialize]
         public void Init()
         {
-            getCoursesMock = new Mock<IGetCourses>();
-            CourseToViewModel ctvm = new CourseToViewModel { Days = 2, Name = "Testing in C Sharp", Code = "TESTCSHARP", Date = "10/10/1010" };
-            List<CourseToViewModel> ienctvm = new List<CourseToViewModel>();
+            handleCoursesMock = new Mock<IHandleCourses>();
             ienctvm.Add(ctvm);
-            getCoursesMock.Setup(x => x.GetListOfCourses(null)).Returns(ienctvm);
-            sut = new CourseController(null, getCoursesMock.Object);
+            handleCoursesMock.Setup(x => x.GetListOfCourses(null)).Returns(ienctvm);
+            sut = new CourseController(null, handleCoursesMock.Object);
         }
         [TestMethod]
         public void ShouldReturnHi()
@@ -29,13 +29,6 @@ namespace InfoSupportCaseTest
             Assert.AreEqual("Hi", sut.SayHiToTheTests());
         }
 
-        [TestMethod]
-        public void ShouldReturnctvm()
-        {
-            CourseToViewModel ctvm = new CourseToViewModel { Days = 2, Name = "Testing in C Sharp", Code = "TESTCSHARP", Date = "10/10/1010" };
-            List<CourseToViewModel> ienctvm = new List<CourseToViewModel>();
-            ienctvm.Add(ctvm);
-            Assert.AreEqual(ienctvm, sut.Get().ToString());
-        }
+        //there aren't a whole lot of tests to write, as all current functions talk with the db
     }
 }

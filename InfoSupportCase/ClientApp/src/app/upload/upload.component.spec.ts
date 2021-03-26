@@ -53,26 +53,26 @@ describe('UploadComponent', () => {
 
   it('should be converted to a Course[]', async(() => {
     //arrange
-    const strArrArr:string[][] = [["Titel: Test titel", "Cursuscode: TEST", "Duur: 1", "Startdatum: 11/11/1111", ""],["Titel: Test titel", "Cursuscode: TEST", "Duur: 1", "Startdatum: 11/11/1111", ""]]
+    const strArrArr:string[][] = [["Titel: Test titel", "Cursuscode: TEST", "Duur: 1", "Startdatum: 11/11/1111", ""],["Titel: Test titel", "Cursuscode: TEST", "Duur: 1", "Startdatum: 11/11/1111", ""],[""]]
     const uploader = new Uploader();
     //act
     const a = uploader.TurnIntoAnArrayOfCourses(strArrArr);
     //assert
     const answer:Course[] = [{code: "TEST", name: "Test titel", id: 0, date: "11/11/1111", days: 1},{code: "TEST", name: "Test titel", id: 0, date: "11/11/1111", days: 1}]
     expect(a.length).toEqual(2);
-    expect(a).toEqual(answer)
+    expect(a).toEqual(answer);
   }));
 
   it('should be converted to a Course[] with different elements', async(() => {
     //arrange
-    const strArrArr:string[][] = [["Titel: Test titel", "Cursuscode: TEST", "Duur: 1", "Startdatum: 11/11/1111", ""],["Titel: Test titel 2", "Cursuscode: TEST2", "Duur: 1", "Startdatum: 11/11/1112", ""]]
+    const strArrArr:string[][] = [["Titel: Test titel", "Cursuscode: TEST", "Duur: 1", "Startdatum: 11/11/1111", ""],["Titel: Test titel 2", "Cursuscode: TEST2", "Duur: 1", "Startdatum: 11/11/1112", ""],[""]]
     const uploader = new Uploader();
     //act
     const a = uploader.TurnIntoAnArrayOfCourses(strArrArr);
     //assert
     const answer:Course[] = [{code: "TEST", name: "Test titel", id: 0, date: "11/11/1111", days: 1},{code: "TEST2", name: "Test titel 2", id: 0, date: "11/11/1112", days: 1}]
     expect(a.length).toEqual(2);
-    expect(a).toEqual(answer)
+    expect(a).toEqual(answer);
   }));
 
   it('should remove Titel: ', async(() => {
