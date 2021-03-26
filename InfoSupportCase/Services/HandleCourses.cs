@@ -49,6 +49,7 @@ namespace InfoSupportCase.Services
         {
             return from course in _context.CourseModel
                    join courseInstance in _context.CourseInstanceModel on course.Id equals courseInstance.CourseId
+                   orderby courseInstance.Date ascending
                    select new CourseToViewModel { Code = course.Code, Days = course.Days, Name = course.Name, Date = courseInstance.Date.ToString("dd/M/yyyy", CultureInfo.InvariantCulture) };
 
         }

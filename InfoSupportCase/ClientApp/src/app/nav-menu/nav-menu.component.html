@@ -27,12 +27,18 @@
           >
             <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
           </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
+          <li 
+            id="navtocourses"
+            class="nav-item" 
+            [routerLinkActive]="['link-active']">
             <a class="nav-link text-dark" [routerLink]="['/courses']"
               >Courses</a
             >
           </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
+          <li 
+          id="navtoupload"
+          class="nav-item" 
+          [routerLinkActive]="['link-active']">
             <a class="nav-link text-dark" [routerLink]="['/upload']"
               >Upload</a
             >

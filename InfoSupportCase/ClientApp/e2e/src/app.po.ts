@@ -8,4 +8,12 @@ export class AppPage {
   getMainHeading() {
     return element(by.css('app-root h1')).getText();
   }
+
+  getNavButton(buttontoclick:string){
+    return element(by.id ('navto'+buttontoclick));
+  }
+
+  getHeaderCourses(){
+    return element(by.id ('tableLabel'));
+  }
 }
