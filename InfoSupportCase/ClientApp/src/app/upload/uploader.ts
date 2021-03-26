@@ -15,29 +15,29 @@ export class Uploader{
       }
     
     TurnIntoAnArrayOfCourses(arrayOfArrays: string[][]): Course[] {
-        const tempCourseArray: Course[] = [];
-        const tempCourse: Course = {name: "", code: "", date: "", days: 0, id: 0};
+        let tempCourse: Course[] = []; 
         //go through all Course arrays
         for (var i=0; i<arrayOfArrays.length; i++) {
     
-        //remove these first characters in this order (Titel: , Cursuscode: , Duur: , Startdatum: ,) from each element
-        for (var a=0; a<arrayOfArrays[i].length; a++) {
-            if (a == 0){
-            tempCourse.name = this.RemoveTitel(a, i, arrayOfArrays);
-            }
-            if (a == 1){
-            tempCourse.code = this.RemoveCursusCode(a, i, arrayOfArrays);
-            }
-            if (a == 2){
-            tempCourse.days = this.RemoveDuur(a, i, arrayOfArrays);
-            }
-            if (a == 3){
-            tempCourse.date = this.RemoveStartDatum(a, i, arrayOfArrays);
+            //remove these first characters in this order (Titel: , Cursuscode: , Duur: , Startdatum: ,) from each element
+            for (var a=0; a<arrayOfArrays[i].length; a++) {
+                if (a == 0){
+                tempCourse.push({name: "", code: "", date: "", days: 0, id: 0});
+                tempCourse[i].name = this.RemoveTitel(a, i, arrayOfArrays);
+                }
+                if (a == 1){
+                tempCourse[i].code = this.RemoveCursusCode(a, i, arrayOfArrays);
+                }
+                if (a == 2){
+                tempCourse[i].days = this.RemoveDuur(a, i, arrayOfArrays);
+                }
+                if (a == 3){
+                tempCourse[i].date = this.RemoveStartDatum(a, i, arrayOfArrays);
+                }
             }
         }
-        tempCourseArray.push(tempCourse);
-        }
-        return tempCourseArray;
+        tempCourse.pop();
+        return tempCourse;
     }
   
     RemoveTitel(a: number, i: number, arrayOfArrays: string[][]): string {

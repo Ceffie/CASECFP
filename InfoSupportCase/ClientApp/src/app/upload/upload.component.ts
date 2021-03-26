@@ -38,9 +38,12 @@ export class UploadComponent implements OnInit {
       const SplitFile = this.uploader.SplitFileOnLinebreaks(FullFile);
 
       const arrayOfArrays = this.uploader.PushSplitArrayIntoAnotherArray(SplitFile);
-
+ 
       this.CourseArray = this.uploader.TurnIntoAnArrayOfCourses(arrayOfArrays);
     };
+
+    //console.log(this.CourseArray[0].name);
+
   }
 }
 
